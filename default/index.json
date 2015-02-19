@@ -153,6 +153,13 @@
         ":spaceship":"spaceship",
         ":spaceman":"astronaut",
         ":block":"block",
-        ":wrench":"wrench"
+        ":wrench":"wrench",
+        ":salute":"salute",
+        ":yolo":"yolo",
+        ":afk":"afk",
+        ":facepalm":"facepalm",
+        "altf4":"altf4",
+        "sudorm-rf":"rmf",
+        ":swag":"1F60E",
     }
 }
