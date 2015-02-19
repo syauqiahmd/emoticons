@@ -170,6 +170,10 @@
         ":friday":"friday",
         ":hagay":"hagay",
         ":murica":"murica",
-        ":wat":"wat"
+        ":wat":"wat",
+        ":coke":"coke",
+        ":pepsi":"pepsi",
+        ":dew":"dew",
+        ":pepper":"pepper"
     }
 }
