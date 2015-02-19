@@ -140,6 +140,19 @@
         ":3":"1FA04",
         ":cat":"1FA04",
         ":dog":"1FA05",
-        ":woof":"1FA05"
+        ":woof":"1FA05",
+        ":pizza":"pizza",
+        ":candy":"candy",
+        ":cake":"cake",
+        ":beer":"beer",
+        ":fries":"fries",
+        ":icecream":"icecream",
+        ":bacon":"bacon",
+        ":popcorn":"popcorn",
+        ":beam":"logo",
+        ":spaceship":"spaceship",
+        ":spaceman":"astronaut",
+        ":block":"block",
+        ":wrench":"wrench"
     }
 }
