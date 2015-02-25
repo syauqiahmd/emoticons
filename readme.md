@@ -4,7 +4,12 @@ This repo is used for storage of all emoticon packs that are available on Beam. 
 
  * A subdirectory with a sensible name
  * An `index.json` in that subdirectory. See below.
- * One or more SVG files within the directory for each emoticon. Every svg must be a 1:1 square ratio, and does not need not be compressed or minified.
+ * One or more SVG files within the directory for each emoticon. Every svg:
+   * must be a 1:1 square ratio,
+   * should not be compressed or minified,
+   * must not contain spaces, `>`, or `<` symbols in the filename or emoticon code,
+   * should have their viewbox set to `0 0 64 64`,
+   * and should be of reasonable filesize and be artifact-free.
 
 ### index.json format
 
@@ -12,7 +17,7 @@ The index.json describes your emoticon pack to us. It can contain the following 
 
  * *name* - The display name of the page.
  * *authors* - An array of strings indicating the original authors and their copyright status.
- * *emoticons* - A map of typed strings to their svg correspondents. For example, the entry `":)": "smile"` would cause `smile.svg` to be displayed in place of `:)`.
+ * *emoticons* - A map of typed strings to their svg correspondents. For example, the entry `":)": "smile"` would cause `smile.svg` to be displayed in place of `:)`. Emoticon codes must not contain spaces, `<`, or `>` symbols.
  * *default* (optional) - Whether the emoticon pack should be "given" to all users by default.
  * *cost* (optional) - If you'd like your pack listed on the Beam store, you should include this section. It should be the number of Beam Points it costs to purchase the pack.
 
