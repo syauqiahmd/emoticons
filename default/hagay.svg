@@ -3,15 +3,16 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
 <g id="HA_gay.psd">
-	<defs>
-		<rect id="SVGID_1_" width="960" height="960"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  overflow="visible"/>
-	</clipPath>
-	<g clip-path="url(#SVGID_2_)">
-		
-			<image overflow="visible" width="1024" height="1024" id="Background" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEATQBNAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
+	<g>
+		<defs>
+			<rect id="SVGID_1_" width="64" height="64"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_2_)">
+			
+				<image overflow="visible" enable-background="new    " width="1028" height="1028" id="Background" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEATQBNAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
 EAMCAwYAAA3LAAAN1wAADfv/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX
 Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa
 JjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/CABEIBAQEBAMBIgACEQEDEQH/
@@ -73,12 +74,20 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/9oACAECAAEFAAQP/9oACAEDAAEFAAQP/9oA
-CAEBAAEFAIEB/9oACAECAgY/AAQP/9oACAEDAgY/AAQP/9oACAEBAQY/AAID/9k=" transform="matrix(0.9375 0 0 0.9375 0 0)">
-		</image>
+CAEBAAEFAIEB/9oACAECAgY/AAQP/9oACAEDAgY/AAQP/9oACAEBAQY/AAID/9k=" transform="matrix(6.225681e-002 0 0 6.225681e-002 0 0)">
+			</image>
+		</g>
 	</g>
-	<g clip-path="url(#SVGID_2_)">
-		
-			<image overflow="visible" width="1024" height="1024" id="E89D2C8A201065085831338930176_x5F_29ea3f94931.0.0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAQAAAQECAYAAADtZ8nvAAAACXBIWXMAAAvXAAAL1wElddLwAAAA
+	<g>
+		<defs>
+			<rect id="SVGID_3_" width="64" height="64"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_4_)">
+			
+				<image overflow="visible" enable-background="new    " width="1028" height="1028" id="E89D2C8A201065085831338930176_x5F_29ea3f94931.0.0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAQAAAQECAYAAADtZ8nvAAAACXBIWXMAAAvXAAAL1wElddLwAAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAK8lJREFUeNrs20uMZul91/HnXN73
 rUtXTXdP99wynnEyjHFsJ7GFxSIyBEtkpJgNEgJlgYTEDgmBYBEBKy+jsAGWSCA2XrIACSEhFhFS
 FIEcJVw8JooZG0+QPT3TPd1TU7f3cg5v9bBigbDk239+n0/Pqdr+59HzPuecb1W1BgAAAAAAAAAA
@@ -276,8 +285,9 @@ vYZ6J28nnvLW5XA71f358+dQn9NzsI2wte1/TbCK0QNdWKdh3BZ+nCCwLnO51HOgw+h2QRnirN/r
 xW8NtkfUYJep+3f3sfbg7bAUKQgs22GpBZq3lxbrhh2s0t8CXKBNog5DGXZxouFuvy/vP3wbak/7
 2z/+Emrep6dYP3js07ydg+OcI+7uTuU8x4kurdfbj5qiOG578GGKc88oQy2Hw9uKgF8ZAAAAgIQE
 AQAAAEhIEAAAAICEBAEAAABISBAAAACAhAQBAAAASEgQAAAAgIQEAQAAAEhIEAAAAICEBAEAAABI
-aPrff3/rUQAAAEAav/uPAAMA2zQU5RmcwcUAAAAASUVORK5CYII=" transform="matrix(0.9375 0 0 0.9375 0 0)">
-		</image>
+aPrff3/rUQAAAEAav/uPAAMA2zQU5RmcwcUAAAAASUVORK5CYII=" transform="matrix(6.225681e-002 0 0 6.225681e-002 0 0)">
+			</image>
+		</g>
 	</g>
 </g>
 </svg>

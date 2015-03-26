@@ -3,15 +3,16 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
 <g id="Wat.psd">
-	<defs>
-		<rect id="SVGID_1_" y="-2" width="960" height="960"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  overflow="visible"/>
-	</clipPath>
-	<g clip-path="url(#SVGID_2_)">
-		
-			<image overflow="visible" width="1024" height="1001" id="synonSr" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAMAAAPsCAYAAAAwC3X3AAAACXBIWXMAAAvXAAAL1wElddLwAAAA
+	<g>
+		<defs>
+			<rect id="SVGID_1_" y="-2" width="960" height="960"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_2_)">
+			
+				<image overflow="visible" enable-background="new    " width="1027" height="1004" id="synonSr" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAMAAAPsCAYAAAAwC3X3AAAACXBIWXMAAAvXAAAL1wElddLwAAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAATJVJREFUeNrs29uvbVl+H/Qx5pxr
 rb3PPnXq2tXucrvdIbG71W07IkRupHCRwUjIAfMQuYkQPKAgAXnjgfB6lD+AB0s8RPAQeAIKpMhS
 hBIpNgGBImg5DsbGaqvS5XT1paq66tz2XnutNS+DuXbFSVAkS5TzS9ep3+dzap319q2hMcccc8zv
@@ -356,8 +357,9 @@ shfejdR+9c0vlHGzjtT+0YMH5b33LiO179w/L6tNaE+5mMvls8y3Zzrsy2Ef2meHZZ8dMj2Z56nM
 0z5Te5punsian+eyv06dr5Zv8ZzpyWbVyng78y7rZlVObp/H9qthtYrVfvbB+7Ham/v3cpeTYE9W
 7ay0VL/ntqz9TPV5tZytMser8ujZdjlzZmpP8/Mn8i7PalmdhmqP+zKOmX322eOnJ7sHjyIHw7Oz
 k7/+6qvjf/gx/pPf9DcDAAAAoDPCAAAAAOiMMAAAAAA6IwwAAACAzggDAAAAoDPCAAAAAOiMMAAA
-AAA6IwwAAACAzggDAAAAoDPCAAAAAOiMMAAAAAA6878EGAA6N27TrYRK3gAAAABJRU5ErkJggg==" transform="matrix(0.9375 0 0 0.9375 0 19.5625)">
-		</image>
+AAA6IwwAAACAzggDAAAAoDPCAAAAAOiMMAAAAAA6878EGAA6N27TrYRK3gAAAABJRU5ErkJggg==" transform="matrix(6.231743e-002 0 0 6.374502e-002 0 0)">
+			</image>
+		</g>
 	</g>
 </g>
 </svg>
