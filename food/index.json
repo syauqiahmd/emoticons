@@ -1,0 +1,22 @@
+{
+    "name": "Food Emoticon Pack",
+    "default": true,
+    "authors": [
+        "Copyright 2015 Ranks.com Inc. <http://emojione.com>",
+        "Copyright 2015 MCProHosting LLC <https://beam.pro>"
+    ],
+    "emoticons": {
+        ":beer": "beer",
+        ":cake": "cake",
+        ":candy": "candy",
+        ":coke": "coke",
+        ":dew": "dew",
+        ":fries": "fries",
+        ":icecream": "icecream",
+        ":pepper": "pepper",
+        ":pepsi": "pepsi",
+        ":pizza": "pizza",
+        ":popcorn": "popcorn",
+        ":turq": "turq"
+    }
+}

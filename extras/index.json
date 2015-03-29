@@ -1,0 +1,21 @@
+{
+    "name": "Extras Emoticon Pack",
+    "default": true,
+    "authors": [
+        "Copyright 2015 Ranks.com Inc. <http://emojione.com>",
+        "Copyright 2015 MCProHosting LLC <https://beam.pro>"
+    ],
+    "emoticons": {
+        ":afk": "afk",
+        ":altf4": "altf4",
+        ":bacon": "bacon",
+        ":barbell": "barbell",
+        ":controller": "controller",
+        ":delorean": "delorean",
+        ":facepalm": "facepalm",
+        ":rmf": "rmf",
+        ":salute": "salute",
+        ":swag": "swag",
+        ":wrench": "wrench"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Memes Emoticon Pack",
+    "default": true,
+    "authors": [
+        "Copyright 2015 Ranks.com Inc. <http://emojione.com>",
+        "Copyright 2015 MCProHosting LLC <https://beam.pro>"
+    ],
+    "emoticons": {
+        ":127": "127",
+        ":arrowknee": "arrowknee",
+        ":index": "index",
+        ":mappa": "mappa",
+        ":suit": "suit",
+        ":wat": "wat",
+        ":yolo": "yolo"
+    }
+}
