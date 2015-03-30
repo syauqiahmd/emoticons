@@ -14,6 +14,8 @@ file_re = r'^[a-zA-Z0-9_-]*$'
 max_wh = 64
 # Maximum emoticon file size
 max_file_size = 1024 * 50
+# Extranous files allowed in packs.
+allowed_files = ['index.json']
 
 
 # Read the manifest. This'll throw an exception and exit if invalid.
@@ -79,6 +81,13 @@ def check_emoticon_list(emoticon, file):
     assert re.match(file_re, file)
     assert len(emoticon) > 1
 
+# Throws an error if there are files in the directory other than those
+# which are emoticons or the manifest.
+def check_for_extraneous(subdir, emoticons):
+    allowed = allowed_files + emoticons
+    for file in os.listdir(subdir):
+        if file not in allowed and path.splitext(file)[0] not in allowed:
+            raise AssertionError('File `%s` is extraneous!' % file)
 
 for subdir in os.listdir('.'):
     data = get_manifest_data(subdir)
@@ -98,4 +107,6 @@ for subdir in os.listdir('.'):
 
     print('\tSuccessfully verified %s emoticons.' % count)
 
+    check_for_extraneous(subdir, list(data['emoticons'].values()))
+    print('\tNo extraneous files detected.')
 
