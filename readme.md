@@ -4,12 +4,13 @@ This repo is used for storage of all emoticon packs that are available on Beam. 
 
  * A subdirectory with a sensible name
  * An `index.json` in that subdirectory. See below.
- * One or more SVG files within the directory for each emoticon. Every svg:
-   * must be a 1:1 square ratio,
+ * One or more SVG or PNG files within the directory for each emoticon. Every svg:
    * should not be compressed or minified,
-   * must not contain spaces, `>`, or `<` symbols in the filename or emoticon code,
-   * should have their viewbox set to `0 0 64 64`,
+   * should have a url-friendly filename,
+   * may be no larger than 64x64 pixels and 50 kb _at maximum_
    * and should be of reasonable filesize and be artifact-free.
+
+Running `python test.py` will tell you if there are any errors with your pack.
 
 ### index.json format
 
