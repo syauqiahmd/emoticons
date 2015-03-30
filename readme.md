@@ -1,5 +1,7 @@
 # beam-emoticons
 
+[![Build Status](https://travis-ci.org/MCProHosting/beam-emoticons.svg?branch=master)](https://travis-ci.org/MCProHosting/beam-emoticons)
+
 This repo is used for storage of all emoticon packs that are available on Beam. If you'd like to create and sell an emoticon pack, open a pull request to this repo. Your pull request should consist of:
 
  * A subdirectory with a sensible name
