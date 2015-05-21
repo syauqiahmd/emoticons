@@ -89,24 +89,36 @@ def check_for_extraneous(subdir, emoticons):
         if file not in allowed and path.splitext(file)[0] not in allowed:
             raise AssertionError('File `%s` is extraneous!' % file)
 
-for subdir in os.listdir('.'):
-    data = get_manifest_data(subdir)
-    if data is None:
-        continue
+def run(dir):
+    manifests = {}
 
-    check_manifest_fields(data)
+    for subdir in os.listdir(dir):
+        data = get_manifest_data(subdir)
+        if data is None:
+            continue
 
-    # Check that emoticons don't contained any banned chars, and that
-    # the codes are sufficiently long.
-    count = 0
-    print('\tVerifying emoticons.')
-    for emoticon, file in data['emoticons'].items():
-        check_emoticon_list(emoticon, file)
-        check_emoticon_file(path.join(subdir, file))
-        count += 1
+        check_manifest_fields(data)
 
-    print('\tSuccessfully verified %s emoticons.' % count)
+        # Check that emoticons don't contained any banned chars, and that
+        # the codes are sufficiently long.
+        count = 0
+        print('\tVerifying emoticons.')
+        for emoticon, file in data['emoticons'].items():
+            check_emoticon_list(emoticon, file)
+            check_emoticon_file(path.join(subdir, file))
+            count += 1
 
-    check_for_extraneous(subdir, list(data['emoticons'].values()))
-    print('\tNo extraneous files detected.')
+        print('\tSuccessfully verified %s emoticons.' % count)
+
+        check_for_extraneous(subdir, list(data['emoticons'].values()))
+        print('\tNo extraneous files detected.')
+
+        manifests[subdir] = data
+
+    # Write out the manifests
+    with open(path.join(dir, 'manifest.json'), 'w') as out:
+        json.dump(manifests, out)
+
+if __name__ == '__main__':
+    run('.')
 
