@@ -151,6 +151,10 @@ exports.spritesheet = function (size, dir, target, callback) {
          * @param  {Number}   idx
          */
         (function next (idx, ptr) {
+            if (idx >= codes.length) {
+                return done();
+            }
+
             var x = size * (ptr % columns);
             var y = size * Math.floor(ptr / columns);
 
@@ -184,10 +188,8 @@ exports.spritesheet = function (size, dir, target, callback) {
             function cb (err) {
                 if (err) {
                     callback(err);
-                } else if (idx < codes.length - 1) {
-                    next(idx + 1, ptr);
                 } else {
-                    done();
+                    next(idx + 1, ptr);
                 }
             }
         })(0, 0);

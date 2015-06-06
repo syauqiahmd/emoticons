@@ -28,23 +28,21 @@ var tasks = {
         fs.mkdirSync(dest);
 
         (function next (idx) {
+            if (idx >= targets.length) {
+                return fs.writeFileSync(
+                    path.join(dest, 'manifest.json'),
+                    JSON.stringify(manifest)
+                );
+            }
+
             var target = targets[idx];
             var file = path.join(dest, target + '.png');
 
             processing.spritesheet(size, target, file, function (err, m) {
                 if (err) throw err;
                 manifest[target] = m;
-
-                if (idx < targets.length - 1) {
-                    next(idx + 1);
-                } else {
-                    fs.writeFileSync(
-                        path.join(dest, 'manifest.json'),
-                        JSON.stringify(manifest)
-                    );
-                }
+                next(idx + 1);
             });
-
         })(0);
     }
 };
