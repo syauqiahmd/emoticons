@@ -10,5 +10,18 @@
   "bugs": {
     "url": "https://github.com/MCProHosting/beam-emoticons/issues"
   },
-  "homepage": "https://github.com/MCProHosting/beam-emoticons"
+  "homepage": "https://github.com/MCProHosting/beam-emoticons",
+  "bin": {
+    "emoticons": "./_bin/build.js"
+  },
+  "scripts": {
+    "test": "node _bin/build.js . --recursive --test",
+    "build": "node _bin/build.js . --recursive --test --build _out --size 16"
+  },
+  "dependencies": {
+    "lwip": "0.0.7",
+    "minimist": "^1.1.1",
+    "optipng-bin": "^3.0.2",
+    "rimraf": "^2.3.4"
+  }
 }
