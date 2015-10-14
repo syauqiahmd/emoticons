@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "node _bin/build.js . --recursive --test",
-    "build": "node _bin/build.js . --recursive --test --build _out --size 16"
+    "build": "node _bin/build.js . --recursive --test --build _out --size 24"
   },
   "dependencies": {
     "lwip": "0.0.7",
