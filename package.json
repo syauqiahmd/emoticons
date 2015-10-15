@@ -19,7 +19,7 @@
     "build": "node _bin/build.js . --recursive --test --build _out --size 24"
   },
   "dependencies": {
-    "lwip": "0.0.7",
+    "lwip": "0.0.8",
     "minimist": "^1.1.1",
     "optipng-bin": "^3.0.2",
     "rimraf": "^2.3.4"
