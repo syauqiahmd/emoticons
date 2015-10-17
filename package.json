@@ -19,7 +19,7 @@
     "build": "node _bin/build.js . --recursive --test --build _out --size 22",
     "prepublish": "npm run build"
   },
-  "dependencies": {
+  "devDependencies": {
     "lwip": "0.0.8",
     "minimist": "^1.1.1",
     "optipng-bin": "^3.0.2",
