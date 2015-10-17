@@ -17,7 +17,7 @@
   "scripts": {
     "test": "node _bin/build.js . --recursive --test",
     "build": "node _bin/build.js . --recursive --test --build _out --size 22",
-    "prepublish": "npm run buid"
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "lwip": "0.0.8",
