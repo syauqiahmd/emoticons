@@ -1,6 +1,6 @@
 {
   "name": "beam-emoticons",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/WatchBeam/emoticons.git"
@@ -16,7 +16,8 @@
   },
   "scripts": {
     "test": "node _bin/build.js . --recursive --test",
-    "build": "node _bin/build.js . --recursive --test --build _out --size 24"
+    "build": "node _bin/build.js . --recursive --test --build _out --size 22",
+    "prepublish": "npm run buid"
   },
   "dependencies": {
     "lwip": "0.0.8",
