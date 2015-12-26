@@ -92,7 +92,8 @@ exports.spritesheet = function (size, dir, target, callback) {
          * @param {lwip} i
          * @param {Function} callback
          */
-        function add(file, ext, x, y,callback) {
+        n = 0
+        function add(file, ext, x, y, callback) {
             lwip.open(file, ext, function (err, i) {
                 if (err) return callback(err);
                 i.resize(size, size, function (err, i) {
@@ -109,7 +110,7 @@ exports.spritesheet = function (size, dir, target, callback) {
          * @param {Function} callback
          */
         function grabSvg(file, callback) {
-            var p = cp.spawn('rsvg-convert', ['-w', size, '-h', size, file]);
+            var p = cp.spawn('rsvg-convert', ['-f', 'png', file]);
             var bufs = [];
             var stderr = '';
             p.stdout.on('data', function (data) {
@@ -176,7 +177,7 @@ exports.spritesheet = function (size, dir, target, callback) {
                     say('Rendering ' + stat.file, 1);
                     grabSvg(stat.file, function (err, buf) {
                         if (err) return callback(err);
-                        say('Drawing ' + stat.file + ' at (' + x + ', ' + y + ')', 1);
+                        say('Drawing svg ' + stat.file + ' at (' + x + ', ' + y + ')', 1);
                         add(buf, 'png', x, y, cb);
                     });
                     break;
