@@ -17,6 +17,7 @@
         ":salute": "salute",
         ":swag": "swag",
         ":wrench": "wrench",
-        ":christmas": "christmastree"
+        ":christmas": "christmastree",
+        ":jinglebell": "christmasbell"
     }
 }
