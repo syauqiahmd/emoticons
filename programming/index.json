@@ -8,6 +8,7 @@
     ],
     "emoticons": {
         ":node": "node",
-        ":java": "java"
+        ":java": "java",
+        ":python": "python"
     }
 }
