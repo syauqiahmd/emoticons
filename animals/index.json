@@ -2,17 +2,19 @@
     "name": "Animals Emoticon Pack",
     "default": true,
     "authors": [
-        "Copyright 2015 Ranks.com Inc. <http://emojione.com>",
-        "Copyright 2015 MCProHosting LLC <https://beam.pro>"
+        "Copyright 2016 Ranks.com Inc. <http://emojione.com>",
+        "Copyright 2016 MCProHosting LLC <https://beam.pro>",
+        "Copyright 2016 Queen_Liz <https://beam.pro/Queen_Liz"
     ],
     "emoticons": {
-        ":fish":"fish",
-        ":zombie":"monster",
-        ":monster":"monster",
-        ":chicken":"chicken",
-        ":3":"cat",
-        ":cat":"cat",
-        ":dog":"dog",
-        ":woof":"dog"
+        ":fish": "fish",
+        ":zombie": "monster",
+        ":monster": "monster",
+        ":chicken": "chicken",
+        ":3": "cat",
+        ":cat": "cat",
+        ":dog": "dog",
+        ":woof": "dog",
+        ":hamster": "hamster"
     }
 }
