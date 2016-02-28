@@ -16,7 +16,7 @@
         ":cat": "cat",
         ":dog": "dog",
         ":woof": "dog",
-        ":hamster": "hamster"
+        ":hamster": "hamster",
     	":sloth": "sloth"
     }
 }
