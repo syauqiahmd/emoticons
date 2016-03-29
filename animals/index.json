@@ -5,7 +5,7 @@
         "Copyright 2016 Ranks.com Inc. <http://emojione.com>",
         "Copyright 2016 MCProHosting LLC <https://beam.pro>",
         "Copyright 2016 Queen_Liz <https://beam.pro/Queen_Liz>",
-        "Copyright 2016 DnatorGames <https://twitter.com/DnatorGames>"
+    	"Copyright 2016 DnatorGames <https://twitter.com/DnatorGames>"
     ],
     "emoticons": {
         ":fish": "fish",
@@ -17,7 +17,6 @@
         ":dog": "dog",
         ":woof": "dog",
         ":hamster": "hamster",
-        ":sloth": "sloth",
-        ":stanley": "stanley"
+    	":sloth": "sloth"
     }
 }
