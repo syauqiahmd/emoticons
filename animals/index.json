@@ -12,7 +12,6 @@
         ":zombie": "monster",
         ":monster": "monster",
         ":chicken": "chicken",
-        ":3": "cat",
         ":cat": "cat",
         ":dog": "dog",
         ":woof": "dog",
