@@ -12,7 +12,7 @@ This repo is used for storage of all emoticon packs that are available on Beam. 
    * may be no larger than 64x64 pixels and 50 kb _at maximum_
    * and should be of reasonable filesize and be artifact-free.
 
-Running `python test.py` will tell you if there are any errors with your pack.
+Running `npm test` will tell you if there are any errors with your pack.
 
 ### index.json format
 
