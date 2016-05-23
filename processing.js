@@ -169,7 +169,12 @@ exports.spritesheet = function (size, dir, target, callback) {
                 return cb();
             }
 
-            manifest.emoticons[code] = cached[name] = { x: x, y: y };
+            manifest.emoticons[code] = cached[name] = {
+                x, y,
+                width: size,
+                height: size
+            };
+
             ptr += 1;
 
             switch (stat.fmt) {
