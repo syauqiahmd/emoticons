@@ -20,7 +20,7 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "lwip": "0.0.8",
+    "lwip": "0.0.9",
     "minimist": "^1.1.1",
     "optipng-bin": "^3.0.2",
     "rimraf": "^2.3.4"
