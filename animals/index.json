@@ -3,19 +3,64 @@
     "default": true,
     "authors": [
         "Copyright 2016 Ranks.com Inc. <http://emojione.com>",
-        "Copyright 2016 Beam Interactive, Inc <https://beam.pro>",
+        "Copyright 2017 Microsoft <https://microsoft.com>",
         "Copyright 2016 Queen_Liz <https://beam.pro/Queen_Liz>",
-    	"Copyright 2016 DnatorGames <https://twitter.com/DnatorGames>"
+        "Copyright 2016 DnatorGames <https://twitter.com/DnatorGames>"
     ],
     "emoticons": {
-        ":fish": "fish",
-        ":zombie": "monster",
-        ":monster": "monster",
-        ":chicken": "chicken",
-        ":cat": "cat",
-        ":dog": "dog",
-        ":woof": "dog",
-        ":hamster": "hamster",
-    	":sloth": "sloth"
+        ":fish": {
+            "file": "fish",
+            "alt": {
+                "en": "fish"
+            }
+        },
+        ":zombie": {
+            "file": "monster",
+            "alt": {
+                "en": "zombie"
+            }
+        },
+        ":monster": {
+            "file": "monster",
+            "alt": {
+                "en": "monster"
+            }
+        },
+        ":chicken": {
+            "file": "chicken",
+            "alt": {
+                "en": "chicken"
+            }
+        },
+        ":cat": {
+            "file": "cat",
+            "alt": {
+                "en": "cat"
+            }
+        },
+        ":dog": {
+            "file": "dog",
+            "alt": {
+                "en": "dog"
+            }
+        },
+        ":woof": {
+            "file": "dog",
+            "alt": {
+                "en": "woof"
+            }
+        },
+        ":hamster": {
+            "file": "hamster",
+            "alt": {
+                "en": "hamster"
+            }
+        },
+        ":sloth": {
+            "file": "sloth",
+            "alt": {
+                "en": "sloth"
+            }
+        }
     }
 }

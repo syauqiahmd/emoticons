@@ -3,21 +3,86 @@
     "default": false,
     "authors": [
         "Copyright 2015 Ranks.com Inc. <http://emojione.com>",
-        "Copyright 2015 Beam Interactive, Inc <https://beam.pro>"
+        "Copyright 2017 Microsoft <https://microsoft.com>"
     ],
     "emoticons": {
-        ":bacon": "bacon",
-        ":beer": "beer",
-        ":cake": "cake",
-        ":candy": "candy",
-        ":coke": "coke",
-        ":dew": "dew",
-        ":fries": "fries",
-        ":icecream": "icecream",
-        ":pepper": "pepper",
-        ":pepsi": "pepsi",
-        ":pizza": "pizza",
-        ":popcorn": "popcorn",
-        ":turqmelon": "turq"
+        ":bacon": {
+            "file": "bacon",
+            "alt": {
+                "en": "bacon"
+            }
+        },
+        ":beer": {
+            "file": "beer",
+            "alt": {
+                "en": "beer"
+            }
+        },
+        ":cake": {
+            "file": "cake",
+            "alt": {
+                "en": "cake"
+            }
+        },
+        ":candy": {
+            "file": "candy",
+            "alt": {
+                "en": "candy"
+            }
+        },
+        ":coke": {
+            "file": "coke",
+            "alt": {
+                "en": "coke"
+            }
+        },
+        ":dew": {
+            "file": "dew",
+            "alt": {
+                "en": "dew"
+            }
+        },
+        ":fries": {
+            "file": "fries",
+            "alt": {
+                "en": "fries"
+            }
+        },
+        ":icecream": {
+            "file": "icecream",
+            "alt": {
+                "en": "icecream"
+            }
+        },
+        ":pepper": {
+            "file": "pepper",
+            "alt": {
+                "en": "pepper"
+            }
+        },
+        ":pepsi": {
+            "file": "pepsi",
+            "alt": {
+                "en": "pepsi"
+            }
+        },
+        ":pizza": {
+            "file": "pizza",
+            "alt": {
+                "en": "pizza"
+            }
+        },
+        ":popcorn": {
+            "file": "popcorn",
+            "alt": {
+                "en": "popcorn"
+            }
+        },
+        ":turqmelon": {
+            "file": "turq",
+            "alt": {
+                "en": "turqmelon"
+            }
+        }
     }
 }

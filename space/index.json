@@ -3,10 +3,20 @@
     "default": true,
     "authors": [
         "Copyright 2015 Ranks.com Inc. <http://emojione.com>",
-        "Copyright 2015 Beam Interactive, Inc <https://beam.pro>"
+        "Copyright 2017 Microsoft <https://microsoft.com>"
     ],
     "emoticons": {
-        ":astronaut": "astronaut",
-        ":spaceship": "spaceship"
+        ":astronaut": {
+            "file": "astronaut",
+            "alt": {
+                "en": "astronaut"
+            }
+        },
+        ":spaceship": {
+            "file": "spaceship",
+            "alt": {
+                "en": "spaceship"
+            }
+        }
     }
 }

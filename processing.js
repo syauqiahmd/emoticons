@@ -34,9 +34,13 @@ exports.validate = function (dir, cb) {
 
     say('Checking emoticons', 1);
     Object.keys(manifest.emoticons).forEach(function (code) {
-        var file = manifest.emoticons[code];
-        assert(fileRe.test(file));
         assert(code.length > 1);
+
+        var emoticon = manifest.emoticons[code];
+        var file = emoticon.file;
+        assert(fileRe.test(file));
+        assert(emoticon.alt);
+        assert(emoticon.alt.en);
 
         say('Looking for ' + file, 2);
         var stat = getFormat(path.join(dir, file));
@@ -72,7 +76,8 @@ exports.spritesheet = function (size, dir, target, callback) {
     var unique = 0;
     var seen = [];
     codes.forEach(function (code) {
-        var f = manifest.emoticons[code];
+        var emoticon = manifest.emoticons[code];
+        var f = emoticon.file;
         if (seen.indexOf(f) === -1) {
             seen.push(f);
             unique++;
@@ -160,19 +165,22 @@ exports.spritesheet = function (size, dir, target, callback) {
             var y = size * Math.floor(ptr / columns);
 
             var code = codes[idx];
-            var name = manifest.emoticons[code];
-            var stat = getFormat(path.join(dir, name));
+            var emoticon = manifest.emoticons[code];
+            var filename = emoticon.file;
+            var stat = getFormat(path.join(dir, filename));
 
-            if (name in cached) {
+            if (filename in cached) {
                 say('Loading file for `' + code + '` from cache.', 1);
-                manifest.emoticons[code] = cached[name];
+                manifest.emoticons[code] = cached[filename];
                 return cb();
             }
 
-            manifest.emoticons[code] = cached[name] = {
+            delete manifest.emoticons[code].file;
+            manifest.emoticons[code] = cached[filename] = {
                 x, y,
                 width: size,
-                height: size
+                height: size,
+                alt: manifest.emoticons[code].alt
             };
 
             ptr += 1;

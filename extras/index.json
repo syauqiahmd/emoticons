@@ -3,21 +3,86 @@
     "default": true,
     "authors": [
         "Copyright 2015 Ranks.com Inc. <http://emojione.com>",
-        "Copyright 2015 Beam Interactive, Inc <https://beam.pro>"
+        "Copyright 2017 Microsoft <https://microsoft.com>"
     ],
     "emoticons": {
-        ":afk": "afk",
-        ":altf4": "altf4",
-        ":barbell": "barbell",
-        ":controller": "controller",
-        ":delorean": "delorean",
-        ":facepalm": "facepalm",
-        ":rmf": "rmf",
-        ":salute": "salute",
-        "o7": "salute",
-        ":swag": "swag",
-        ":wrench": "wrench",
-        ":christmas": "christmastree",
-        ":jinglebell": "christmasbell"
+        ":afk": {
+            "file": "afk",
+            "alt": {
+                "en": "away from keyboard"
+            }
+        },
+        ":altf4": {
+            "file": "altf4",
+            "alt": {
+                "en": "alt f4"
+            }
+        },
+        ":barbell": {
+            "file": "barbell",
+            "alt": {
+                "en": "barbell"
+            }
+        },
+        ":controller": {
+            "file": "controller",
+            "alt": {
+                "en": "controller"
+            }
+        },
+        ":delorean": {
+            "file": "delorean",
+            "alt": {
+                "en": "delorean"
+            }
+        },
+        ":facepalm": {
+            "file": "facepalm",
+            "alt": {
+                "en": "facepalm"
+            }
+        },
+        ":rmf": {
+            "file": "rmf",
+            "alt": {
+                "en": "terminal"
+            }
+        },
+        ":salute": {
+            "file": "salute",
+            "alt": {
+                "en": "salute"
+            }
+        },
+        "o7": {
+            "file": "salute",
+            "alt": {
+                "en": "salute"
+            }
+        },
+        ":swag": {
+            "file": "swag",
+            "alt": {
+                "en": "swag"
+            }
+        },
+        ":wrench": {
+            "file": "wrench",
+            "alt": {
+                "en": "wrench"
+            }
+        },
+        ":christmas": {
+            "file": "christmastree",
+            "alt": {
+                "en": "christmas"
+            }
+        },
+        ":jinglebell": {
+            "file": "christmasbell",
+            "alt": {
+                "en": "jinglebell"
+            }
+        }
     }
 }

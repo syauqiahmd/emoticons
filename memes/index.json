@@ -3,17 +3,63 @@
     "default": true,
     "authors": [
         "Copyright 2015 Ranks.com Inc. <http://emojione.com>",
-        "Copyright 2015 Beam Interactive, Inc <https://beam.pro>"
+        "Copyright 2017 Microsoft <https://microsoft.com>"
     ],
     "emoticons": {
-        ":127": "127",
-        ":arrowknee": "arrowknee",
-        ":beam": "beam",
-        ":cactus": "cactus",
-        ":mappa": "mappa",
-        ":suit": "suit",
-        ":wat": "wat",
-        ":yolo": "yolo",
-        ":whoappa": "whoappa"
+        ":127": {
+            "file": "127",
+            "alt": {
+                "en": "servers on fire"
+            }
+        },
+        ":arrowknee": {
+            "file": "arrowknee",
+            "alt": {
+                "en": "arrow to the knee"
+            }
+        },
+        ":beam": {
+            "file": "beam",
+            "alt": {
+                "en": "beam"
+            }
+        },
+        ":cactus": {
+            "file": "cactus",
+            "alt": {
+                "en": "cactus"
+            }
+        },
+        ":mappa": {
+            "file": "mappa",
+            "alt": {
+                "en": "mappa",
+                "fr": "le mappa"
+            }
+        },
+        ":suit": {
+            "file": "suit",
+            "alt": {
+                "en": "suit"
+            }
+        },
+        ":wat": {
+            "file": "wat",
+            "alt": {
+                "en": "wat"
+            }
+        },
+        ":yolo": {
+            "file": "yolo",
+            "alt": {
+                "en": "yolo"
+            }
+        },
+        ":whoappa": {
+            "file": "whoappa",
+            "alt": {
+                "en": "whoappa"
+            }
+        }
     }
 }
