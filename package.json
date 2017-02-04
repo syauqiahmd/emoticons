@@ -11,9 +11,6 @@
     "url": "https://github.com/WatchBeam/emoticons/issues"
   },
   "homepage": "https://github.com/WatchBeam/emoticons",
-  "bin": {
-    "emoticons": "./_bin/build.js"
-  },
   "main": "dist/index.js",
   "scripts": {
     "test": "node _bin/build.js . --recursive --test",
