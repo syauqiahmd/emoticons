@@ -14,9 +14,10 @@
   "bin": {
     "emoticons": "./_bin/build.js"
   },
+  "main": "dist/index.js",
   "scripts": {
     "test": "node _bin/build.js . --recursive --test",
-    "build": "node _bin/build.js . --recursive --test --build _out --size 24",
+    "build": "node _bin/build.js . --recursive --test --build dist --size 24",
     "prepublish": "npm run build"
   },
   "devDependencies": {

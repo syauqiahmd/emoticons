@@ -1,18 +1,20 @@
-var optipng = require('optipng-bin');
-var path = require('path');
-var assert = require('assert');
-var fs = require('fs');
-var lwip = require('lwip');
-var cp = require('child_process');
+'use strict';
+
+const optipng = require('optipng-bin');
+const path = require('path');
+const assert = require('assert');
+const fs = require('fs');
+const lwip = require('lwip');
+const cp = require('child_process');
 
 // Required fields in the manifest
-var requiredFields = ['name', 'emoticons'];
+const requiredFields = ['name', 'emoticons'];
 // Pattern to match emoticon files
-var fileRe = /^[a-zA-Z0-9_-]*$/;
+const fileRe = /^[a-zA-Z0-9_-]*$/;
 // Maximum emoticon file size
-var maxFileSize = 1024 * 50;
+const maxFileSize = 1024 * 50;
 // Emoticon file formats
-var formats = ['png', 'gif', 'svg'];
+const formats = ['png', 'gif', 'svg'];
 
 
 /**
@@ -20,30 +22,30 @@ var formats = ['png', 'gif', 'svg'];
  * @param  {String} dir
  * @throws {Error} If invalid
  */
-exports.validate = function (dir, cb) {
+exports.validate = (dir, cb) => {
     say('Checking ' + dir);
 
-    var index = path.join(dir, 'index.json');
-    var manifest = require('./' + index);
-    var allowedFiles = [index];
+    const index = path.join(dir, 'index.json');
+    const manifest = require('./' + index);
+    const allowedFiles = [index];
 
-    requiredFields.forEach(function (name) {
+    requiredFields.forEach(name => {
         assert(name in manifest);
     });
     say('Verified manifest', 1);
 
     say('Checking emoticons', 1);
-    Object.keys(manifest.emoticons).forEach(function (code) {
+    Object.keys(manifest.emoticons).forEach(code => {
         assert(code.length > 1);
 
-        var emoticon = manifest.emoticons[code];
-        var file = emoticon.file;
+        const emoticon = manifest.emoticons[code];
+        const file = emoticon.file;
         assert(fileRe.test(file));
         assert(emoticon.alt);
         assert(emoticon.alt.en);
 
         say('Looking for ' + file, 2);
-        var stat = getFormat(path.join(dir, file));
+        const stat = getFormat(path.join(dir, file));
         if (!stat) {
             assert(false);
         }
@@ -54,7 +56,7 @@ exports.validate = function (dir, cb) {
     });
 
     say('Checking for extraneous files', 1);
-    fs.readdirSync(dir).forEach(function (file) {
+    fs.readdirSync(dir).forEach(file => {
         say('Checking ' + file, 2);
         assert(allowedFiles.indexOf(path.join(dir, file)) !== -1);
     });
@@ -68,26 +70,26 @@ exports.validate = function (dir, cb) {
  * @param  {String} target
  * @param  {Function} callback
  */
-exports.spritesheet = function (size, dir, target, callback) {
+exports.spritesheet = (size, dir, target, callback) => {
     say('Rendering pack ' + dir);
-    var manifest = require('./' + path.join(dir, 'index.json'));
-    var codes = Object.keys(manifest.emoticons);
+    const manifest = require('./' + path.join(dir, 'index.json'));
+    const codes = Object.keys(manifest.emoticons);
 
-    var unique = 0;
-    var seen = [];
-    codes.forEach(function (code) {
-        var emoticon = manifest.emoticons[code];
-        var f = emoticon.file;
+    let unique = 0;
+    const seen = [];
+    codes.forEach(code => {
+        const emoticon = manifest.emoticons[code];
+        const f = emoticon.file;
         if (seen.indexOf(f) === -1) {
             seen.push(f);
             unique++;
         }
     });
 
-    var columns = Math.ceil(Math.sqrt(unique));
-    var rows = Math.ceil(unique / columns);
-    var cached = {};
-    var sheet = lwip.create(columns * size, rows * size, function (err, img) {
+    const columns = Math.ceil(Math.sqrt(unique));
+    const rows = Math.ceil(unique / columns);
+    const cached = {};
+    const sheet = lwip.create(columns * size, rows * size, (err, img) => {
         if (err) return callback(err);
 
         /**
@@ -97,9 +99,8 @@ exports.spritesheet = function (size, dir, target, callback) {
          * @param {lwip} i
          * @param {Function} callback
          */
-        n = 0
         function add(file, ext, x, y, callback) {
-            lwip.open(file, ext, function (err, i) {
+            lwip.open(file, ext, (err, i) => {
                 if (err) return callback(err);
                 i.resize(size, size, function (err, i) {
                     if (err) return callback(err);
@@ -115,18 +116,18 @@ exports.spritesheet = function (size, dir, target, callback) {
          * @param {Function} callback
          */
         function grabSvg(file, callback) {
-            var p = cp.spawn('rsvg-convert', ['-f', 'png', file]);
-            var bufs = [];
-            var stderr = '';
-            p.stdout.on('data', function (data) {
+            const p = cp.spawn('rsvg-convert', ['-f', 'png', file]);
+            const bufs = [];
+            let stderr = '';
+            p.stdout.on('data', data => {
                 bufs.push(data);
             });
 
-            p.stderr.on('data', function (data) {
+            p.stderr.on('data', data => {
                 stderr += data;
             });
 
-            p.on('exit', function (code) {
+            p.on('exit', code => {
                 if (code > 0) {
                     callback(new Error(stderr));
                 } else {
@@ -140,12 +141,12 @@ exports.spritesheet = function (size, dir, target, callback) {
          * @param  {Function} done
          */
         function done () {
-            var tmp = target + '.nomin';
+            const tmp = target + '.nomin';
             say('Writing out to ' + tmp, 1);
-            img.writeFile(tmp, 'png', function (err) {
+            img.writeFile(tmp, 'png', err => {
                 if (err) return callback(err);
                 say('Minifying...', 1);
-                cp.execFile(optipng, ['-out', target, tmp], function (err) {
+                cp.execFile(optipng, ['-out', target, tmp], err => {
                     fs.unlinkSync(tmp);
                     callback(err, manifest);
                 });
@@ -161,13 +162,13 @@ exports.spritesheet = function (size, dir, target, callback) {
                 return done();
             }
 
-            var x = size * (ptr % columns);
-            var y = size * Math.floor(ptr / columns);
+            const x = size * (ptr % columns);
+            const y = size * Math.floor(ptr / columns);
 
-            var code = codes[idx];
-            var emoticon = manifest.emoticons[code];
-            var filename = emoticon.file;
-            var stat = getFormat(path.join(dir, filename));
+            const code = codes[idx];
+            const emoticon = manifest.emoticons[code];
+            const filename = emoticon.file;
+            const stat = getFormat(path.join(dir, filename));
 
             if (filename in cached) {
                 say('Loading file for `' + code + '` from cache.', 1);
@@ -188,7 +189,7 @@ exports.spritesheet = function (size, dir, target, callback) {
             switch (stat.fmt) {
                 case 'svg':
                     say('Rendering ' + stat.file, 1);
-                    grabSvg(stat.file, function (err, buf) {
+                    grabSvg(stat.file, (err, buf) => {
                         if (err) return callback(err);
                         say('Drawing svg ' + stat.file + ' at (' + x + ', ' + y + ')', 1);
                         add(buf, 'png', x, y, cb);
@@ -217,9 +218,9 @@ exports.spritesheet = function (size, dir, target, callback) {
  * @return {Object}
  */
 function getFormat (file) {
-    for (var i = 0; i < formats.length; i++) {
-        var fmt = formats[i];
-        var stat;
+    for (let i = 0; i < formats.length; i++) {
+        let fmt = formats[i];
+        let stat;
 
         try {
             stat = fs.statSync(file + '.' + fmt);
