@@ -1,7 +1,7 @@
 var fs = require('fs');
 var output = module.exports = {};
 
-fs.readdirSync(__dirname).map(function (dir) {
+fs.readdirSync(__dirname).map(dir => {
     var path = __dirname + '/' + dir;
     var index = path + '/index.json';
 

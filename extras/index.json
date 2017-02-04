@@ -83,6 +83,12 @@
             "alt": {
                 "en": "jinglebell"
             }
+        },
+        ":salt": {
+            "file": "salt",
+            "alt": {
+                "en": "salt"
+            }
         }
     }
 }
