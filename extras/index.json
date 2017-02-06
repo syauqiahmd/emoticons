@@ -84,10 +84,10 @@
                 "en": "jinglebell"
             }
         },
-        ":salt": {
-            "file": "salt",
+        ":salted": {
+            "file": "salted",
             "alt": {
-                "en": "salt"
+                "en": "salted"
             }
         }
     }
