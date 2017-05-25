@@ -1,0 +1,51 @@
+{
+    "name": "Mixer Emoticon Pack",
+    "default": true,
+    "authors": [
+        "Copyright 2017 Microsoft <https://microsoft.com>"
+    ],
+    "emoticons": {
+        ":bork": {
+            "file": "bork",
+            "alt": {
+                "en": "bork"
+            }
+        },
+        ":cat": {
+            "file": "cat",
+            "alt": {
+                "en": "cat"
+            }
+        },
+        ":dev": {
+            "file": "dev",
+            "alt": {
+                "en": "dev"
+            }
+        },
+        ":hug": {
+            "file": "hug",
+            "alt": {
+                "en": "hug"
+            }
+        },
+        ":hype": {
+            "file": "hype",
+            "alt": {
+                "en": "hype"
+            }
+        },
+        ":rad": {
+            "file": "rad",
+            "alt": {
+                "en": "rad"
+            }
+        },
+        ":spark": {
+            "file": "spark",
+            "alt": {
+                "en": "spark"
+            }
+        }
+    }
+}
