@@ -4,7 +4,7 @@ const optipng = require('optipng-bin');
 const path = require('path');
 const assert = require('assert');
 const fs = require('fs');
-const lwip = require('lwip');
+const lwip = require('@mcph/lwip');
 const cp = require('child_process');
 
 // Required fields in the manifest
