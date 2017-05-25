@@ -6,45 +6,45 @@
     ],
     "emoticons": {
         ":bork": {
-            "file": "bork",
+            "file": "bork-bot",
             "alt": {
-                "en": "bork"
+                "en": "BorkBot"
             }
         },
         ":cat": {
-            "file": "cat",
+            "file": "cat-bot",
             "alt": {
-                "en": "cat"
+                "en": "BatBot"
             }
         },
         ":dev": {
-            "file": "dev",
+            "file": "dev-bot",
             "alt": {
-                "en": "dev"
+                "en": "BevBot"
             }
         },
         ":hug": {
-            "file": "hug",
+            "file": "hug-bot",
             "alt": {
-                "en": "hug"
+                "en": "BugBot"
             }
         },
         ":hype": {
-            "file": "hype",
+            "file": "hype-bot",
             "alt": {
-                "en": "hype"
+                "en": "BypeBot"
             }
         },
         ":rad": {
-            "file": "rad",
+            "file": "rad-bot",
             "alt": {
-                "en": "rad"
+                "en": "BadBot"
             }
         },
         ":spark": {
-            "file": "spark",
+            "file": "spark-bot",
             "alt": {
-                "en": "spark"
+                "en": "BparkBot"
             }
         }
     }
