@@ -3,14 +3,14 @@
   "version": "1.0.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/WatchBeam/emoticons.git"
+    "url": "https://github.com/mixer/emoticons.git"
   },
   "author": "Connor Peet <connor@connorpeet.com>",
   "license": "Proprietary",
   "bugs": {
-    "url": "https://github.com/WatchBeam/emoticons/issues"
+    "url": "https://github.com/mixer/emoticons/issues"
   },
-  "homepage": "https://github.com/WatchBeam/emoticons",
+  "homepage": "https://github.com/mixer/emoticons",
   "main": "dist/manifest.json",
   "scripts": {
     "test": "node _bin/build.js . --recursive --test",
