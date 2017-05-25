@@ -5,46 +5,46 @@
         "Copyright 2017 Microsoft <https://microsoft.com>"
     ],
     "emoticons": {
-        ":bork": {
+        ":bork-bot": {
             "file": "bork-bot",
             "alt": {
                 "en": "BorkBot"
             }
         },
-        ":cat": {
+        ":cat-bot": {
             "file": "cat-bot",
             "alt": {
-                "en": "BatBot"
+                "en": "CatBot"
             }
         },
-        ":dev": {
+        ":dev-bot": {
             "file": "dev-bot",
             "alt": {
-                "en": "BevBot"
+                "en": "DevBot"
             }
         },
-        ":hug": {
+        ":hug-bot": {
             "file": "hug-bot",
             "alt": {
-                "en": "BugBot"
+                "en": "HugBot"
             }
         },
-        ":hype": {
+        ":hype-bot": {
             "file": "hype-bot",
             "alt": {
-                "en": "BypeBot"
+                "en": "HypeBot"
             }
         },
-        ":rad": {
+        ":rad-bot": {
             "file": "rad-bot",
             "alt": {
-                "en": "BadBot"
+                "en": "RadBot"
             }
         },
-        ":spark": {
+        ":spark-bot": {
             "file": "spark-bot",
             "alt": {
-                "en": "BparkBot"
+                "en": "SparkBot"
             }
         }
     }
