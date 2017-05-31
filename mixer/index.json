@@ -5,6 +5,12 @@
         "Copyright 2017 Microsoft <https://microsoft.com>"
     ],
     "emoticons": {
+        ":mixer": {
+            "file": "mixer-merge",
+            "alt": {
+                "en": "Mixer"
+            }
+        },
         ":bork-bot": {
             "file": "bork-bot",
             "alt": {
