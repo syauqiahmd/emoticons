@@ -1,9 +1,9 @@
-var fs = require('fs');
-var output = module.exports = {};
+const fs = require('fs');
+const output = module.exports = {};
 
 fs.readdirSync(__dirname).map(dir => {
-    var path = __dirname + '/' + dir;
-    var index = path + '/index.json';
+    const path = __dirname + '/' + dir;
+    const index = path + '/index.json';
 
     if (fs.existsSync(index)) {
         output[dir] = require(index);

@@ -12,6 +12,7 @@
   },
   "homepage": "https://github.com/mixer/emoticons",
   "main": "dist/manifest.json",
+  "typings": "types.d.ts",
   "scripts": {
     "test": "node _bin/build.js . --recursive --test",
     "build": "node _bin/build.js . --recursive --test --build dist --size 24",
