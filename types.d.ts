@@ -13,7 +13,7 @@ export interface IPack {
     path: string;
     emoticons: { [text: string]: IEmote };
 }
-q
+
 const emoticons: { [key: string]: IPack };
 namespace emoticons {}
 
