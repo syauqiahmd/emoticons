@@ -89,6 +89,24 @@
             "alt": {
                 "en": "salted"
             }
+        },
+        ":2018": {
+            "file": "2018",
+            "alt": {
+                "en": "2018"
+            }
+        },
+        ":spark": {
+            "file": "spark",
+            "alt": {
+                "en": "spark"
+            }
+        },
+        ":mixerlove": {
+            "file": "mixerlove",
+            "alt": {
+                "en": "mixerlove"
+            }
         }
     }
 }
