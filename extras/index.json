@@ -6,6 +6,12 @@
         "Copyright 2017 Microsoft <https://microsoft.com>"
     ],
     "emoticons": {
+        ":1year": {
+            "file": "1year",
+            "alt": {
+                "en": "1 Year"
+            }
+        },
         ":afk": {
             "file": "afk",
             "alt": {
@@ -42,6 +48,24 @@
                 "en": "facepalm"
             }
         },
+        ":go": {
+            "file": "go",
+            "alt": {
+                "en": "go"
+            }
+        },
+        ":hashtags": {
+            "file": "hashtags",
+            "alt": {
+                "en": "Hash Tag"
+            }
+        },
+        ":nah": {
+            "file": "nah",
+            "alt": {
+                "en": "nah"
+            }
+        },
         ":rmf": {
             "file": "rmf",
             "alt": {
@@ -52,6 +76,12 @@
             "file": "salute",
             "alt": {
                 "en": "salute"
+            }
+        },
+        ":stop": {
+            "file": "stop",
+            "alt": {
+                "en": "stop"
             }
         },
         "o7": {
@@ -70,6 +100,12 @@
             "file": "wrench",
             "alt": {
                 "en": "wrench"
+            }
+        },
+        ":yaaa": {
+            "file": "yaaa",
+            "alt": {
+                "en": "yaaa"
             }
         },
         ":christmas": {

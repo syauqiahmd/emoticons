@@ -52,6 +52,12 @@
             "alt": {
                 "en": "SparkBot"
             }
+        },
+        ":hypezone": {
+            "file": "hypezone",
+            "alt": {
+                "en": "HypeZone"
+            }
         }
     }
 }

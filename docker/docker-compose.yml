@@ -1,0 +1,10 @@
+version: '3'
+services:
+  emoticons:
+    container_name: emoticons
+    image: emoticons:latest
+    build:
+      context: ./
+    volumes:
+      - ../:/emoticons
+    tty: true
