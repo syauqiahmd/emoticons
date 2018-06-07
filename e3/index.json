@@ -1,0 +1,57 @@
+{
+    "name": "E3 Emoticon Pack",
+    "default": true,
+    "authors": [
+        "Copyright 2017 Microsoft <https://microsoft.com>"
+    ],
+    "emoticons": {
+        ":E3hype": {
+            "file": "E3hype",
+            "alt": {
+                "en": "E3 Hype"
+            }
+        },
+        ":john": {
+            "file": "john",
+            "alt": {
+                "en": "John"
+            }
+        },
+        ":phils": {
+            "file": "phils",
+            "alt": {
+                "en": "Phil"
+            }
+        },
+        ":playstation": {
+            "file": "playstation",
+            "alt": {
+                "en": "PlayStation"
+            }
+        },
+        ":reggie": {
+            "file": "reggie",
+            "alt": {
+                "en": "Reggie"
+            }
+        },
+        ":switch": {
+            "file": "switch",
+            "alt": {
+                "en": "Switch"
+            }
+        },
+        ":takemymoney": {
+            "file": "takemymoney",
+            "alt": {
+                "en": "Take My Money"
+            }
+        },
+        ":xboxone": {
+            "file": "xboxone",
+            "alt": {
+                "en": "Xbox One"
+            }
+        }
+    }
+}
